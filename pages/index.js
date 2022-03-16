@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import VerticalBarChart from '../components/VerticlaBarChart';
 
 const Home = () => {
   return (
@@ -13,7 +12,7 @@ const Home = () => {
       <h1 className="font-bold text-2xl">Chart Js</h1>
 
       <div className="w-[90%] lg:w-[50%] mx-auto">
-        <VerticalBarChart />
+        <h2>sss</h2>
       </div>
     </div>
   );
