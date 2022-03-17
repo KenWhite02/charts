@@ -121,11 +121,7 @@ const getOutputGradient = (ctx, chartArea) => {
 };
 
 const VerticalBarChart = () => {
-  return (
-    <div>
-      <Bar options={options} data={data} height={400} width={600} />
-    </div>
-  );
+  return <Bar options={options} data={data} height={400} width={600} />;
 };
 
 export default VerticalBarChart;
