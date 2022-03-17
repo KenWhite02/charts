@@ -100,8 +100,8 @@ const getInputGradient = (ctx, chartArea) => {
     0,
     chartArea.bottom
   );
-  gradientBg.addColorStop(0.3, '#60efff');
-  gradientBg.addColorStop(1, '#0061ff');
+  gradientBg.addColorStop(0.4, '#ff1b6b');
+  gradientBg.addColorStop(1, '#45caff');
 
   return gradientBg;
 };
@@ -114,14 +114,18 @@ const getOutputGradient = (ctx, chartArea) => {
     0,
     chartArea.bottom
   );
-  gradientBg.addColorStop(0.3, '#0061ff');
-  gradientBg.addColorStop(1, '#60efff');
+  gradientBg.addColorStop(0.4, '#45caff');
+  gradientBg.addColorStop(1, '#ff1b6b');
 
   return gradientBg;
 };
 
 const VerticalBarChart = () => {
-  return <Bar options={options} data={data} height={400} width={600} />;
+  return (
+    <div className="shadow-lg rounded-md border-2 p-5">
+      <Bar options={options} data={data} height={510} width={600} />
+    </div>
+  );
 };
 
 export default VerticalBarChart;
