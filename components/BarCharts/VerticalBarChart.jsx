@@ -123,7 +123,7 @@ const getOutputGradient = (ctx, chartArea) => {
 const VerticalBarChart = () => {
   return (
     <div className="shadow-lg rounded-md border-2 p-5">
-      <Bar options={options} data={data} height={510} width={600} />
+      <Bar options={options} data={data} width={600} height={510} />
     </div>
   );
 };
