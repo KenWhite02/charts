@@ -1,7 +1,8 @@
 import Head from 'next/head';
 
-import HorizontalBarChart from '../components/BarCharts/HorizontalBarChart';
 import VerticalBarChart from '../components/BarCharts/VerticalBarChart';
+import HorizontalBarChart from '../components/BarCharts/HorizontalBarChart';
+import StackedBarChart from '../components/BarCharts/StackedBarChart';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <div className="w-[97%] lg:w-[50%] mx-auto space-y-10">
         <VerticalBarChart />
         <HorizontalBarChart />
+        <StackedBarChart />
       </div>
     </div>
   );
