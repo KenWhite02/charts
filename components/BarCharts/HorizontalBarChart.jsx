@@ -34,7 +34,9 @@ const options = {
   },
   scales: {
     x: {
-      display: false,
+      grid: {
+        display: false,
+      },
     },
     y: {
       grid: {
