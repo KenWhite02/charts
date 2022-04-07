@@ -24,16 +24,22 @@ export const options = {
   plugins: {
     title: {
       display: true,
-      text: 'Chart.js Bar Chart - Stacked',
+      text: 'Stacked Bar Chart',
     },
   },
   responsive: true,
   scales: {
     x: {
       stacked: true,
+      grid: {
+        display: false,
+      },
     },
     y: {
       stacked: true,
+      grid: {
+        display: false,
+      },
     },
   },
 };
@@ -46,17 +52,17 @@ export const data = {
     {
       label: 'Dataset 1',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(255, 99, 132)',
+      backgroundColor: '#ff1b6b',
     },
     {
       label: 'Dataset 2',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(75, 192, 192)',
+      backgroundColor: '#FF8A5B',
     },
     {
       label: 'Dataset 3',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-      backgroundColor: 'rgb(53, 162, 235)',
+      backgroundColor: '#45caff',
     },
   ],
 };
